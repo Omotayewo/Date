@@ -1,0 +1,73 @@
+html{
+	min-height: 100%;
+}
+body{
+	background: white;
+}
+section{
+	padding: 10px;
+	margin: -10px;
+}
+div{
+	margin: 80px;
+	letter-spacing: 4px;
+	padding: 0px;
+}
+.word{
+	background: linear-gradient(yellow, orange);
+}
+.date{
+	background: black;
+}
+.quote{
+	background: linear-gradient(orange, yellow);
+}
+.w{
+	background: black;
+	color: white;
+	text-align: center;
+	border: 1px groove blue;
+	border-radius: 6%;
+}
+.p{
+	text-align: center;
+	font-size: 20px;
+}
+.m{
+	text-align: center;
+	color: white;
+	background: black;
+	border: 1px groove blue;
+	border-radius: 6%;
+}
+h2{
+	text-align: center;
+}
+#para{
+	letter-spacing: 0px;
+	color: white;
+}
+.w, .m{
+	animation: rap 10s infinite 1s alternate; 
+}
+@keyframes rap{
+	0% { background: black}
+	20% { background: green }
+	40% { background: purple }
+	60% { background: blue }
+	80% { background: indigo }
+	100% { background: violet }
+}
+@media screen and (min-width: 480px) {
+	section{
+		margin: 40px;
+		padding: 100px;
+	}
+	body{
+		padding: 100px;
+		background: hsl(227deg, 40%, 40%);
+	}
+	#para{
+		letter-spacing: 15px;
+	}
+}
